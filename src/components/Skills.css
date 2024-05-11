@@ -1,0 +1,139 @@
+section {
+  padding: 1.8rem 0;
+  width: 100%;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: rgb(20, 170, 220);
+  transform: translate(-50%);
+}
+
+.title::after {
+  content: "what I Know";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: black;
+  transform: translate(-50%);
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .skills .skills-content .column{
+  width: calc(50% - 30px);
+} */
+
+.skills .skills-content .right {
+  color: white;
+  width: 80%;
+}
+
+@media screen and (min-width: 1080px) {
+  .skills .skills-content .right {
+    width: 60%;
+  }
+}
+
+/* .skills .skills-content .left .text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .left p{
+  text-align: justify;
+
+} */
+
+.skills .skills-content .right .read-more {
+  display: inline-block;
+  background-color: crimson;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-content .right .read-more:hover {
+  color: crimson;
+  background: none;
+}
+
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills .skills-content .right span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background-color: lightgray;
+  position: relative;
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: crimson;
+}
+
+.skills .skills-content .right .html::before {
+  width: 90%;
+}
+.skills .skills-content .right .css::before {
+  width: 70%;
+}
+.skills .skills-content .right .js::before {
+  width: 80%;
+}
+.skills .skills-content .right .reactjs::before {
+  width: 75%;
+}
+.skills .skills-content .right .c::before {
+  width: 85%;
+}
+.skills .skills-content .right .cpp::before {
+  width: 80%;
+}
+.skills .skills-content .right .python::before {
+  width: 65%;
+}
